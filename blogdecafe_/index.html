@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- acentos y caracteristicas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--viewport(para dispositivos moviles)-->
+    <title>Blog De Café</title>
+    <meta name="description" content="Pagina web de Blog de café"> <!--descripcion de la pagina-->
+<!-- Prefetch (carga la proxima pagina que queremos que el usuario visite)-->
+<link rel="prefetch" href="nosotros.html" as="document"> <!--document, hace referencia a un archivo html-->
+
+
+<!-- Preload (lo que quiero cargar rapidamente)-->
+<link rel="preload" href="css/norlamize.css" as="style">
+<link rel="stylesheet" href="/css/norlamize.css">
+
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" 
+crossorigin="crossorigin" as="font"> <!--colocamos el crossorigin cuando se trata de otra url-->
+
+<link rel="preload" href="/css/style.css" as="style">
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos.</p>
+        </div>
+    </header>
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="entrada"> <!-- Cuando requerimos un articulo usamos la etiqueta, <article>-->
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="Imagen Blog"><!--loading="lazy" medida para mejorar la perfonmance, carga las imagenes segun las voy viendo.-->
+                    </picture>
+                </div>
+                
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipo de Grano de Café</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat egestas facilisis. Duis interdum dui eget auctor facilisis. Morbi hendrerit aliquet nibh, id facilisis justo vestibulum vel. Curabitur et orci imperdiet, vulputate augue ut, volutpat velit. Aliquam sapien augue, pretium vel turpis sed, fermentum faucibus massa. Ut molestie nisi non tortor malesuada, ut venenatis ante volutpat. Morbi tellus sapien, rutrum eget dapibus pretium, dignissim vitae sem. Quisque id gravida ante, sit amet viverra turpis. Maecenas a vulputate neque.</p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+            <article class="entrada"> <!-- Cuando requerimos un articulo usamos la etiqueta, <article>-->
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="Imagen Blog2"><!--loading="lazy" medida para mejorar la perfonmance, carga las imagenes segun las voy viendo.-->
+                    </picture>
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tres Deliciosas Recetas de café</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat egestas facilisis. Duis interdum dui eget auctor facilisis. Morbi hendrerit aliquet nibh, id facilisis justo vestibulum vel. Curabitur et orci imperdiet, vulputate augue ut, volutpat velit. Aliquam sapien augue, pretium vel turpis sed, fermentum faucibus massa. Ut molestie nisi non tortor malesuada, ut venenatis ante volutpat. Morbi tellus sapien, rutrum eget dapibus pretium, dignissim vitae sem. Quisque id gravida ante, sit amet viverra turpis. Maecenas a vulputate neque.</p>
+                    <a href="entrada1.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+            <article class="entrada"> <!-- Cuando requerimos un articulo usamos la etiqueta, <article>-->
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="Imagen Blog3"><!--loading="lazy" medida para mejorar la perfonmance, carga las imagenes segun las voy viendo.-->
+                    </picture>
+                    </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios Del Café</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat egestas facilisis. Duis interdum dui eget auctor facilisis. Morbi hendrerit aliquet nibh, id facilisis justo vestibulum vel. Curabitur et orci imperdiet, vulputate augue ut, volutpat velit. Aliquam sapien augue, pretium vel turpis sed, fermentum faucibus massa. Ut molestie nisi non tortor malesuada, ut venenatis ante volutpat. Morbi tellus sapien, rutrum eget dapibus pretium, dignissim vitae sem. Quisque id gravida ante, sit amet viverra turpis. Maecenas a vulputate neque.</p>
+                    <a href="entrada2.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres.</h3>
+            
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Tecnicas de Extraccion de Café</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="informacion1.html" class="boton boton--secundario">Mas Informacion Sobre Nuestros Cursos</a>
+                </li><!--Fin Primer Li-->
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">4 Recetas de Café para principiantes</h4>
+                    <p class="widget-curso__label">Precio: 
+                        <span class="widget-curso__info">$20</span>
+                    </p>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">30</span>
+                    </p>
+                    <a href="informacion2.html" class="boton boton--secundario">Mas Informacion Sobre Nuestros Cursos</a>
+                </li><!--Fin Segundo Li-->
+            </u><!--Lista no ordenada (<ol>Lista ordenada)-->
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
